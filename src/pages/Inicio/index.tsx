@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/core";
 import {
     Container,
     Image,
+    Text
 } from "./style";
 import { Button, ButtonText } from "../../components";
 
@@ -15,15 +16,18 @@ export default function Perfil() {
     function handleFavoritos() {
         navigation.navigate("Favoritos");
     }
+    function handleAnimais() {
+        navigation.navigate("Animais");
+    }
     return (
         <Container>
             
-                <Image source={require("../../../assets/iconepessoa.png")}/>
-            
-
+            <Image source={require("../../../assets/iconepessoa.png")}/>
+            <Text>Anelyse Maria</Text>
             <Button title="Informações" size="define" onPress={handleInformacoes}/>
             <Button title="Favoritos" size="define" onPress={handleFavoritos} />
-           
+            <Button title="Meus Animais" size="define" onPress={handleAnimais} />
+
         </Container>
     );
 }

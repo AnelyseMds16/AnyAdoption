@@ -13,11 +13,15 @@ export const View = styled.View`
 `
 export const Text = styled.Text`
   font-size: 18px;
-`
+  font-weight: 500;
+  text-align: center;
+  margin: 1px;
 
+`
 export const Image = styled.Image`
   width: 100px; 
   height: 106px;
   border-radius: 50px;
   margin-bottom: 40px;
 `
+

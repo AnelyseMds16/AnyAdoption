@@ -18,8 +18,7 @@ export default function Perfil() {
     return (
         <Container>
             
-            <Button title="Cachorros" size="define" onPress={handleInformacoes} />
-            <Button title="Gato" size="define" onPress={handleFavoritos} />
+        
         </Container>
     );
 }

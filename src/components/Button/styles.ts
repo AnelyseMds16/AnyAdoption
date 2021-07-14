@@ -7,8 +7,8 @@ const sizeVariations = {
 
   `,
   define: css`
-    
     width: 255px;
+    height: 70px;
   `
 }
 
@@ -17,16 +17,16 @@ const paddingVariations = {
     padding: 10px;
   `,
   define: css`
-    padding: 170px;
+    padding: 200px;
   `
 }
 
+
 export const ButtonStyle = styled.TouchableOpacity<ButtonStyleProps>`
   background-color: ${colors.roxo};
-  width: 127px;
-
+  width: 200px;
   border-radius: 15px;
-  margin: 10px;
+  margin: 2px;
   margin-top: 30px;
   ${(props) => sizeVariations[props.size || "default"]};
 `
@@ -34,6 +34,7 @@ export const ButtonStyleText = styled.Text<ButtonStyleProps>`
   color: ${colors.white};
   font-weight: bold;
   text-align: center;
+  margin: 5px;
   font-size: 20px;
   ${(props) => paddingVariations[props.size || "default"]};
 `

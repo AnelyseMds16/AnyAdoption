@@ -3,8 +3,7 @@ import { useNavigation } from "@react-navigation/core";
 import { Image } from "react-native";
 import {
     Container,
-    View,
-    Text
+    View
 } from "./style";
 import { Button, ButtonText } from "../../components";
 
@@ -18,12 +17,10 @@ export default function Perfil() {
     }
     return (
         <Container>
-            <View>
-                <Button title="Cachorros" size="define" onPress={handleInformacoes} />
-                <Button title="Gato" size="define" onPress={handleFavoritos} />
-                <Button title="Coelhos" size="define" onPress={handleFavoritos} />
-                <Button title="Outros" size="define" onPress={handleFavoritos} />
-            </View>
+            <Button title="Cachorros" size="define" onPress={handleInformacoes} />
+            <Button title="Gato" size="define" onPress={handleFavoritos} />
+            <Button title="Coelhos" size="define" onPress={handleFavoritos} />
+            <Button title="Outros" size="define" onPress={handleFavoritos} />
         </Container>
     );
 }
