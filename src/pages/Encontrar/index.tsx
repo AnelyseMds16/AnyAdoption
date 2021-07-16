@@ -5,7 +5,7 @@ import {
     Container,
     View
 } from "./style";
-import { Button, ButtonText } from "../../components";
+import { ButtonAction } from "../../components";
 
 export default function Perfil() {
     const navigation = useNavigation();
@@ -17,10 +17,10 @@ export default function Perfil() {
     }
     return (
         <Container>
-            <Button title="Cachorros" size="define" onPress={handleInformacoes} />
-            <Button title="Gato" size="define" onPress={handleFavoritos} />
-            <Button title="Coelhos" size="define" onPress={handleFavoritos} />
-            <Button title="Outros" size="define" onPress={handleFavoritos} />
+            <ButtonAction image={require("../../../assets/dog.png")} title="Cachorros" size="define" onPress={handleInformacoes} />
+            <ButtonAction image={require("../../../assets/cat.png")} title="Gatos" size="define" onPress={handleFavoritos} />
+            <ButtonAction image={require("../../../assets/coelho.png")} title="Coelhos" size="define" onPress={handleFavoritos} />
+            <ButtonAction title="Outros" size="define" onPress={handleFavoritos} />
         </Container>
     );
 }

@@ -6,11 +6,7 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
 `
-export const View = styled.View`
-  background-color: #CDE0DB;
-  margin: 40px auto;
-  border-radius: 30px;
-`
+
 export const Text = styled.Text`
   font-size: 18px;
   font-weight: 500;

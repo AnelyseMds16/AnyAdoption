@@ -28,13 +28,14 @@ export const ButtonStyle = styled.TouchableOpacity<ButtonStyleProps>`
   border-radius: 15px;
   margin: 2px;
   margin-top: 30px;
+  align-items: center; 
   ${(props) => sizeVariations[props.size || "default"]};
 `
 export const ButtonStyleText = styled.Text<ButtonStyleProps>`
   color: ${colors.white};
   font-weight: bold;
-  text-align: center;
-  margin: 5px;
+  align-items: center; 
+  margin: 12px;
   font-size: 20px;
   ${(props) => paddingVariations[props.size || "default"]};
 `

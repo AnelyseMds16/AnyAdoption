@@ -1,24 +1,36 @@
 import React from "react";
-import { useNavigation } from "@react-navigation/core";
-import { Image } from "react-native";
+
 import {
     Container,
-    View
+    Text,
+    View,
+    Image
 } from "./style";
-import { Button, ButtonText } from "../../components";
 
-export default function Perfil() {
-    const navigation = useNavigation();
-    function handleInformacoes() {
-        navigation.navigate("Informacoes");
-    }
-    function handleFavoritos() {
-        navigation.navigate("Favoritos");
-    }
+
+export default function Experiencias() {
+    
     return (
         <Container>
-            
-        
+            <View>
+                <Image source={require("../../../assets/iconepessoa.png")}/>
+                <Text>Lázaro Eduardo, 20 anos</Text>
+                <Text>Varginha, MG</Text>
+                
+                <Text> Eu adotei pelo Any Adoption e hoje sou muito mais feliz, 
+                    um companheiro deixa tudo mais leve e a vida mais linda!! 
+                    Adote um pet e não tenha mais depressão!! </Text>
+            </View>
+
+            {/* <View>
+                <Image source={require("../../../assets/iconepessoa.png")}/>
+                <Text>Lázaro Eduardo, 20 anos</Text>
+                <Text>Varginha, MG</Text>
+                <Text> Eu adotei pelo Any Adoption e hoje sou muito mais feliz, 
+                    um companheiro deixa tudo mais leve e a vida mais linda!! 
+                    Adote um pet e não tenha mais depressão!! </Text>
+            </View> */}
         </Container>
+        
     );
 }

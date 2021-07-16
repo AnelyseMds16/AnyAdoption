@@ -6,7 +6,7 @@ import { ButtonStyle, ButtonStyleText, ButtonStyleImage } from "./styles";
 export default function Button({ size, image, title, onPress, ...rest }: ButtonProps) {
   return (
     <ButtonStyle size={size} onPress={onPress} {...rest}>
-      {/* <ButtonStyleImage source={require({image})}/> */}
+      {image && <ButtonStyleImage source={image}/>}
       <ButtonStyleText>{title}</ButtonStyleText>
     </ButtonStyle>
   );

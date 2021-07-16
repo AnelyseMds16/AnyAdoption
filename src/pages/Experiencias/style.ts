@@ -7,11 +7,20 @@ export const Container = styled.View`
   justify-content: center;
 `
 export const View = styled.View`
-  background-color: #CDE0DB;
-  margin: 40px auto;
-  border-radius: 30px;
+  background-color: ${colors.roxinho};
+  margin: 40px;
+  border-radius: 20px;
+  padding: 20px;
 `
 
 export const Text = styled.Text`
-  font-size: 18px;
+  font-size: 20px;
 `
+
+export const Image = styled.Image`
+  width: 70px; 
+  height: 76px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+`
+
