@@ -16,7 +16,7 @@ const paddingVariations = {
     padding: 10px;
   `,
   define: css`
-    padding: 170px;
+    padding: 160px;
   `
 }
 

@@ -4,10 +4,11 @@ import { Image } from "react-native";
 import {
     Container,
     FormRow,
-    Label,
     TextInput,
     Title,
     Form,
+    View,
+    Text
 } from "./style";
 import { Button, ButtonText } from "../../components";
 
@@ -16,8 +17,8 @@ export default function Cadastrar() {
     function handleLogin() {
         navigation.navigate("Login");
     }
-    function handleHome() {
-        navigation.navigate("Home");
+    function handleMenu() {
+        navigation.navigate("Menu");
     }
     return (
         <Container>
@@ -25,15 +26,17 @@ export default function Cadastrar() {
                 <Image source={require("../../../assets/logo.png")} style={{ width: 200, height: 206, alignContent: "center"}}/>
                 <Title>Cadastrar</Title>
                 <FormRow>
-                    <Label>E-mail</Label>
                     <TextInput placeholder="e-mail"></TextInput>
                 </FormRow>
                 <FormRow>
-                    <Label>Senha</Label>
                     <TextInput placeholder="senha"></TextInput>
                 </FormRow>
-                <Button title="Cadastrar" onPress={handleHome} />
-                <ButtonText title="Login" onPress={handleLogin} />
+                <Button title="Cadastrar" onPress={handleMenu} />
+                <View>
+                    <Text> Já tem uma conta?</Text>
+                    <ButtonText title="Login" onPress={handleLogin} />
+                </View>
+                
             </Form>
         </Container>
     );

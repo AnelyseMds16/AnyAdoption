@@ -7,10 +7,11 @@ export const Container = styled.SafeAreaView`
   justify-content: center;
 `
 export const Text = styled.Text`
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
+  padding: 5px;
   
 `
 export const Button = styled.TouchableOpacity`

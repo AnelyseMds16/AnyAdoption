@@ -10,17 +10,24 @@ export const View = styled.View`
   background-color: ${colors.roxinho};
   margin: 40px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 25px;
+  margin-top: 8px;
+  align-items: center;
 `
 
 export const Text = styled.Text`
   font-size: 20px;
 `
 
+export const Text1 = styled.Text`
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 10px;
+`
+
 export const Image = styled.Image`
   width: 70px; 
   height: 76px;
   border-radius: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 `
-

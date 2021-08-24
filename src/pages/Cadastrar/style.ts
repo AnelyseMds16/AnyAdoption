@@ -24,17 +24,27 @@ export const FormRow = styled.View`
   margin-top: 10px;
   text-align: center;
 `
-export const Label = styled.Text`
-  font-size: 18px;
-  color: ${colors.preto};
-  padding: 10px;
-  
-`
 export const TextInput = styled.TextInput`
-  border-bottom-width: 1px;
+  border: 3px;
+  border-radius: 30px;
   font-size: 18px;
-  padding: 5px;
+  padding: 10px;
   margin-left: 5px;
-  margin-bottom: 5px;
-  width: 50%;
+  margin-bottom: 3px;
+  width: 70%;
+  border-color: ${colors.roxo};
+  background-color: ${colors.roxinho};
+  text-align: center;
+`
+
+export const View = styled.View`
+  display: flex;
+  flex-direction: row;
+`
+
+export const Text = styled.TextInput`
+  color: ${colors.preto};
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
 `

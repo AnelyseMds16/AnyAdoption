@@ -12,10 +12,3 @@ export const ButtonStyleText = styled.Text`
   padding: 10px;
   font-size: 16px;
 `
-
-export const Text = styled.TextInput`
-  color: ${colors.preto};
-  font-weight: bold;
-  text-align: center;
-  font-size: 16px;
-`
