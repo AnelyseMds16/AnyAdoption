@@ -10,17 +10,18 @@ export default function App() {
         <Drawer.Navigator
             screenOptions={{
                 headerShown: true,
-                headerStyle: {backgroundColor: `${colors.roxo}`},
-                headerTintColor: "white"
+                headerStyle: { backgroundColor: `${colors.roxo}` },
+                headerTintColor: "white",
+                /* headerTitle: () => <Text style={styles.title}>Animais</Text>,
+                    drawerStyle: {
+                    backgroundColor: colors.brownLight,
+                }, */
             }}
         >
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Inicio" component={Inicio} />
-        <Drawer.Screen name="Encontrar" component={Encontrar} />
-        <Drawer.Screen name="Experiências" component={Experiencias} />
-        
-
-
+            <Drawer.Screen name="Home" component={Home} />
+            <Drawer.Screen name="Inicio" component={Inicio} />
+            <Drawer.Screen name="Encontrar" component={Encontrar} />
+            <Drawer.Screen name="Experiências" component={Experiencias} />
         </Drawer.Navigator>
     );
 }

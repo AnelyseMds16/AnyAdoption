@@ -8,8 +8,8 @@ export const Container = styled.View`
 `
 export const View = styled.View`
   background-color: ${colors.roxinho};
-  margin: 40px;
-  border-radius: 20px;
+  margin: 20px;
+  border-radius: 30px;
   padding: 25px;
   margin-top: 8px;
   align-items: center;
