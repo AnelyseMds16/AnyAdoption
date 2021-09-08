@@ -1,4 +1,4 @@
-export default[
+export default [
     {
         id: 1,
         imagem: require("../../assets/iconepessoa.png"),
@@ -6,7 +6,7 @@ export default[
         idade: 20,
         cidade: "Varginha - MG",
         texto: `Eu adotei pelo Any Adoption e hoje sou muito mais feliz, um companheiro deixa tudo mais leve e a vida mais linda!! Adote um pet e não tenha mais depressão!!`
-    }, 
+    },
     {
         id: 2,
         imagem: require("../../assets/iconepessoa.png"),

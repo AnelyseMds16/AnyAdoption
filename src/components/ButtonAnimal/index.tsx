@@ -1,24 +1,29 @@
 import React from "react";
-import { TouchableOpacity} from "react-native";
+import { TouchableOpacity } from "react-native";
 import { ButtonProps } from "../../interfaces/Button.interface";
 
-import{
-    Text,
-    Image
+import {
+  Text,
+  Image
 } from "./style";
 
 export default function ButtonAnimal({
-    title,
-    image,
-    onPress,
-    ...rest
-  }: ButtonProps) {
-    return (
-      <TouchableOpacity onPress={onPress} {...rest}>
-          {image && <Image source={image} />}
-          <Text>{title}</Text>
-      </TouchableOpacity>
-    );
+  nome,
+  image,
+  idade,
+  raca,
+  sexo,
+  distancia,
+  children,
+  onPress,
+  ...rest
+}: ButtonProps) {
+  return (
+    <TouchableOpacity onPress={onPress} {...rest}>
+      {image && <Image source={image} />}
+      {children}
+    </TouchableOpacity>
+  );
 }
 
 

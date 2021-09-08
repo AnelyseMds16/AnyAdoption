@@ -22,7 +22,9 @@ export default function Experiencias() {
                     <Text1>{item.cidade}</Text1>
                     <Text>{item.texto}</Text>
                 </View>
-            )}/>
+            )}
+                keyExtractor={item => String(item.id)}
+            />
         </Container>
     );
 }
