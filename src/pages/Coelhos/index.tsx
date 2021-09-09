@@ -8,7 +8,7 @@ import {
     Text
 } from "./style"
 
-export default function Cachorros() {
+export default function Coelhos() {
     const navigation = useNavigation();
     function handleVoltar() {
         navigation.navigate("Encontrar");

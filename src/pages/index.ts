@@ -4,5 +4,7 @@ export { default as Cadastrar } from './Cadastrar'
 export { default as Inicio } from './Inicio'
 export { default as Experiencias } from './Experiencias'
 export { default as Encontrar } from './Encontrar'
+export { default as Informacoes } from "./Informacoes"
 export { default as Gatos } from './Gatos'
-export { default as Cachorro } from './Cachorros'
+export { default as Cachorros } from './Cachorros'
+export { default as Coelhos } from './Coelhos'

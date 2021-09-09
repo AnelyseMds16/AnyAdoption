@@ -14,11 +14,14 @@ export default function Perfil() {
     function handleGatos() {
         navigation.navigate("Gatos");
     }
+    function handleCoelhos() {
+        navigation.navigate("Coelhos");
+    }
     return (
         <Container>
             <ButtonAction image={require("../../../assets/dog.png")} title="Cachorros" size="define" onPress={handleCachorros} />
             <ButtonAction image={require("../../../assets/cat.png")} title="Gatos" size="define" onPress={handleGatos} />
-            <ButtonAction image={require("../../../assets/coelho.png")} title="Coelhos" size="define" onPress={handleGatos} />
+            <ButtonAction image={require("../../../assets/coelho.png")} title="Coelhos" size="define" onPress={handleCoelhos} />
             <ButtonAction title="Outros" size="define" onPress={handleGatos} />
         </Container>
     );

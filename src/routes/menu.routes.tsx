@@ -1,7 +1,9 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { Inicio, Experiencias, Encontrar, Home } from "../pages";
+import { Experiencias, Home } from "../pages";
+import PerfilStack from "./perfil.routes";
+import EncontrarStack from "./encontrar.routes";
 import colors from "../styles/colors";
 
 const Drawer = createDrawerNavigator();
@@ -17,9 +19,10 @@ export default function App() {
             }}
         >
             <Drawer.Screen name="Home" component={Home} />
-            <Drawer.Screen name="Perfil" component={Inicio} />
-            <Drawer.Screen name="Encontrar" component={Encontrar} />
+            <Drawer.Screen name="Perfil" component={PerfilStack} />
+            <Drawer.Screen name="Encontrar" component={EncontrarStack} />
             <Drawer.Screen name="Experiências" component={Experiencias} />
+
         </Drawer.Navigator>
     );
 }

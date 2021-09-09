@@ -8,3 +8,7 @@ export const Container = styled.SafeAreaView`
 export const View = styled.View`
 
 `
+
+export const Text = styled.Text`
+    
+`
