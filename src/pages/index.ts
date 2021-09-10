@@ -8,3 +8,5 @@ export { default as Informacoes } from "./Informacoes"
 export { default as Gatos } from './Gatos'
 export { default as Cachorros } from './Cachorros'
 export { default as Coelhos } from './Coelhos'
+export { default as Favoritos } from './Favoritos'
+export { default as MeusAnimais } from './MeusAnimais'

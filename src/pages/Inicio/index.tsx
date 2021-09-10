@@ -16,8 +16,8 @@ export default function Perfil() {
     function handleFavoritos() {
         navigation.navigate("Favoritos");
     }
-    function handleAnimais() {
-        navigation.navigate("Animais");
+    function handleMeusAnimais() {
+        navigation.navigate("MeusAnimais");
     }
     return (
         <Container>
@@ -26,7 +26,7 @@ export default function Perfil() {
             <Text>Anelyse Maria</Text>
             <Button title="Informacoes" size="define" onPress={handleInformacoes} />
             <Button title="Favoritos" size="define" onPress={handleFavoritos} />
-            <Button title="Meus Animais" size="define" onPress={handleAnimais} />
+            <Button title="Meus Animais" size="define" onPress={handleMeusAnimais} />
 
         </Container>
     );
