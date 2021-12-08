@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, StyleSheet } from "react-native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { Experiencias, Home } from "../pages";
+import { Experiencias, Home, Sair } from "../pages";
 import PerfilStack from "./perfil.routes";
 import EncontrarStack from "./encontrar.routes";
 import colors from "../styles/colors";
@@ -22,7 +22,7 @@ export default function App() {
             <Drawer.Screen name="Perfil" component={PerfilStack} />
             <Drawer.Screen name="Encontrar" component={EncontrarStack} />
             <Drawer.Screen name="Experiências" component={Experiencias} />
-
+            <Drawer.Screen name="Sair" component={Sair} />
         </Drawer.Navigator>
     );
 }
